@@ -1,23 +1,20 @@
-# Ex.No:2(E)  SECOND LARGEST ELEMENT IN AN ARRAY
+# Ex.No:2(E)  SMALLEST ELEMENT IN AN ARRAY
 
 ## AIM:
-To write a Java program that reads an array size and elements from the user and then finds and prints the second largest element in the array.
+To write a Java program using any one access modifier and display "Hello World".
+
 ## ALGORITHM :
 1.	Start the program.
-2.	Read the size of the array from the user.
-3.	Declare an array of the given size.
-4.	Read the array elements from the user.
-5.	Initialize a variable max with the first element of the array.
-6.	Traverse the array using a loop.
-7.	Compare each element with max. If an element is large, update max.
-8.	After the loop ends, print the second largest number.
-9.	End the program.
+2.	Define a class HelloWorldExample using the public access modifier.
+3.	Create a public static void main(String[] args) method.
+4.	Inside the main method, print "Hello World" using System.out.println().
+5.	End the program.
 	
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Second Largest Element in an Array
+Program to implement a Smallest Element in an Array
 Developed by: Barath S
 RegisterNumber: 212222230018
 */
@@ -25,43 +22,26 @@ RegisterNumber: 212222230018
 
 ## Sourcecode.java:
 ```
-import java.util.*;
-public class main
-{
-    public static void main(String[] args)
-    {
-        int n,i,j,temp=0;
-        Scanner sc = new Scanner(System.in);
-        n = sc.nextInt();
-        int[] arr = new int[n];
-        for(i=0;i<n;i++)
-        {
-            arr[i] = sc.nextInt();
-        }
-        System.out.print("Second largest element = ");
-        for(i=0;i<n;i++)
-        {
-            for(j=i+1;j<n;j++)
-            {
-                if(arr[i] < arr[j])
-                {
-                    temp = arr[i];
-                    arr[i] =arr[j];
-                    arr[j] = temp;
-                }
-            }
-        }
-        System.out.print(arr[1]);
-        
+public class Main{
+    public void display(){
+        System.out.println("HelloWorld");
+    }
+    public static void main(String[] args){
+        Main obj1=new Main();
+        obj1.display();
     }
 }
 ```
+
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/bb4831f6-0934-4308-9cca-34a9c9ad3636)
+![image](https://github.com/user-attachments/assets/2da18b06-4113-4fcb-9750-366a2ea6e982)
 
 ## RESULT:
-Thus the java program successfully reads the array size and elements from the user and correctly finds and prints the smallest number in the array.
+Thus, the Java program using a public access modifier to display "Hello World" was successfully implemented and executed.
+
+
+
 
 
 
