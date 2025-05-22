@@ -1,25 +1,29 @@
-# Ex.No:11(D) RELATED TO MAP CONCEPTS
+# Ex.No:11(C)             JAVA LINKED HASHMAP
+ ## AIM :
 
-## AIM:
-To Create a java program to insert and display the key and values using map interface.
+To Create a java program to display the contains key of 104 and to retrieve the key and value using linked hash map.
 
 ## ALGORITHM :
 
-1.	Start
+1.	Start the Program
 2.	Import `java.util.*`
-3.	Define class `Deivamagal` with `main` method:
--	a) Read integer `n` (number of entries).
--	b) Create a `HashMap` `hash`.
-4.	Loop to read key-value pairs and add to `hash`.
-5.	Print `"Map: " + hash`, keys, values, and entries.
-6.	End
+3.	Define class `A` with `main` method:
+-	a) Initialize `Scanner` and read integer `n`
+-	b) Create a `LinkedHashMap` named `hash` to store integer keys and string values
+4.	Use a loop to:
+-	a) Read an integer and string from the user
+-	b) Add the integer as the key and the string as the value in `hash`
+5.	Use an enhanced `for` loop to iterate through `hash` and print each key-value pair
+6.	Check if the `hash` contains the key `104` and print the result
+7.	End
+
 
 ## PROGRAM:
  ```
 /*
-Program to implement a RELATED TO MAP CONCEPTS using Java
-Developed by: Barath S
-RegisterNumber: 212222230018
+Program to implement a JAVA LINKED HASH MAP using Java
+Developed by:  Soundariyan
+RegisterNumber: 212222230146
 */
 ```
 
@@ -29,7 +33,7 @@ import java.util.*;
 public class Mapp{  
  public static void main(String args[]){ 
      
-  Map<Integer,String> numbers=new HashMap<Integer,String>(); 
+  LinkedHashMap<Integer,String> map=new LinkedHashMap<Integer,String>(); 
   Scanner sc=new Scanner(System.in);
   
   int size=sc.nextInt();
@@ -37,29 +41,31 @@ public class Mapp{
   {
   Integer a=sc.nextInt();
   String b=sc.next();
-  numbers.put(a,b);  
+  map.put(a,b);  
   } 
  
- System.out.println("Map: " + numbers);
+  
+ Iterator<Integer> keySetIterator = map.keySet().iterator(); while(keySetIterator.hasNext()){ Integer key = keySetIterator.next(); System.out.println("key: " + key + " value: " + map.get(key)); }
 
-        
-        System.out.println("Keys: " + numbers.keySet());
+System.out.println("Does HashMap contains 104 as key: " + map.containsValue("collection"));
 
-        
-        System.out.println("Values: " + numbers.values());
 
-        
-        System.out.println("Entries: " + numbers.entrySet());
 
-       
  }  
 }  
 ```
 
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/8017c5f4-1ccd-4101-9194-177ac1176358)
+![image](https://github.com/user-attachments/assets/ab8d3b1f-aefc-4836-8f82-758fa5086cc4)
+
 
 ## RESULT:
-Thus the java program to insert and display the key and values using map interface was  executed and verified successfully.
+Thus the  java program to display the contains key of 104 and to retrieve the key and value using linked hash map was executed successfully.
+
+
+
+
+
+
 
